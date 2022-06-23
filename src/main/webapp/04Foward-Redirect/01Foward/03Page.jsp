@@ -11,10 +11,15 @@
     <title>Title</title>
 </head>
 <body>
+
+    <%@ page import="Ch03.*" %>
     <%
         request.setAttribute("03Page","03Page에서 전달하는 내용");
 
-        /* 포워딩 방식 */
+        SampleDTO sample = new SampleDTO("홍길동","대구");
+        request.setAttribute("sample",sample);
+
+        /* 리다에릭트 방식 */
         RequestDispatcher dispatcher=
         request.getRequestDispatcher("04Result.jsp");
         dispatcher.forward(request,response);

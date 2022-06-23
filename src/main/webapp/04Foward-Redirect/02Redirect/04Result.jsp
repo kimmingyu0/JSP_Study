@@ -19,12 +19,17 @@
     String page03=(String)request.getAttribute("03Page");
     BookDTO book = (BookDTO)request.getAttribute("book");
     SampleDTO sample = (SampleDTO)request.getAttribute("sample");
+
+    /*리다이렉트 파라미터 받기*/
+    String Retest = request.getParameter("Retest");
+
 %>
 ID : <%=id %><br>
 PW : <%=pw %><br>
 P2 : <%=page02 %><br>
 P3 : <%=page03 %><br>
-book : <%=book %><br>
+book :<%=book %><br>
 sample : <%=sample %><br>
+RETEST : <%=Retest %>
 </body>
 </html>

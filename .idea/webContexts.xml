@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/03지시자/02Include/01Main.jsp" value="file://$PROJECT_DIR$/src/main/webapp/03지시자/02Include" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/03지시자/03Include/Page/01Main.jsp" value="file://$PROJECT_DIR$/src/main/webapp/03지시자/03Include/Page" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/04Foward-Redirect/01Foward/02Page.jsp" value="file://$PROJECT_DIR$/src/main/webapp/04Foward-Redirect/01Foward" />
+      </map>
+    </option>
+  </component>
+</project>

@@ -13,16 +13,24 @@
 <body>
     <%@page import="java.sql.*,java.util.*" %>
     <%
-        String url = "jdbc:oracle:thin:@localhost:1521:XE";
-        String id = "book_ex";
-        String pw = "1234";
+        String url = "jdbc:oracle:thin:@localhost:1521:XE"; //DBMS 접속 URL
+        String id = "book_ex";                              //ID
+        String pw = "1234";                                 //PW
+
+        Connection conn = null;
         try{
+            //드라이브를 메모리공간에 적재
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            Connection conn = DriverManager.getConnection(url,id,pw);
+
+            //DB에 연결
+            conn = DriverManager.getConnection(url,id,pw);
+
             System.out.println("Connected...");
 
         }catch (Exception e){
             e.printStackTrace();
+        }finally{
+            try{conn.close();}catch (Exception e1){e1.printStackTrace();}
         }
 
 
